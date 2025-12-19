@@ -29,6 +29,7 @@
 #include "mtb_srf.h"
 #include "cy_gpio.h"
 #include "cybsp.h"
+#include "ifx_se_platform.h"
 
 #include "user_srf.h"
 #include "user_syspm_srf.h"
@@ -111,6 +112,27 @@ cy_rslt_t cy_user_syspm_srf_enterultralowpower_impl_s(mtb_srf_input_ns_t* inputs
     return (cy_rslt_t)CY_RSLT_SUCCESS;
 }
 
+cy_rslt_t cy_user_syspm_srf_enterdeepsleep_impl_s(mtb_srf_input_ns_t* inputs_ns,
+                                            mtb_srf_output_ns_t* outputs_ns,
+                                            mtb_srf_invec_ns_t* inputs_ptr_ns,
+                                            uint8_t inputs_ptr_cnt_ns,
+                                            mtb_srf_outvec_ns_t* outputs_ptr_ns,
+                                            uint8_t outputs_ptr_cnt_ns)
+{
+    CY_UNUSED_PARAMETER(inputs_ns);
+    CY_UNUSED_PARAMETER(inputs_ptr_ns);
+    CY_UNUSED_PARAMETER(inputs_ptr_cnt_ns);
+    CY_UNUSED_PARAMETER(outputs_ptr_ns);
+    CY_UNUSED_PARAMETER(outputs_ptr_cnt_ns);
+    cy_rslt_t retVal;
+
+    retVal = Cy_USER_SysEnterDS();
+
+    memcpy(&outputs_ns->output_values[0], &retVal, sizeof(retVal));
+
+    return (cy_rslt_t)CY_RSLT_SUCCESS;
+}
+
 /* All operations for the SYSPM submodule of the USER module */
 mtb_srf_op_s_t _cy_user_syspm_srf_operations[] =
 {
@@ -148,6 +170,20 @@ mtb_srf_op_s_t _cy_user_syspm_srf_operations[] =
         .op_id = CY_USER_SYSPM_OP_ENTERULTRALOWPOWER,
         .write_required = false,
         .impl = cy_user_syspm_srf_enterultralowpower_impl_s,
+        .input_values_len = 0UL,
+        .output_values_len = 0UL,
+        .input_len ={ 0UL, 0UL, 0UL },
+        .needs_copy = { false, false, false },
+        .output_len ={ 0UL, 0UL, 0UL },
+        .allowed_rsc = NULL,
+        .num_allowed = 0UL,
+    },
+    {
+        .module_id = MTB_SRF_MODULE_USER,
+        .submodule_id = CY_USER_SECURE_SUBMODULE_SYSPM,
+        .op_id = CY_USER_SYSPM_OP_ENTERDEEPSLEEP,
+        .write_required = false,
+        .impl = cy_user_syspm_srf_enterdeepsleep_impl_s,
         .input_values_len = 0UL,
         .output_values_len = 0UL,
         .input_len ={ 0UL, 0UL, 0UL },
@@ -282,7 +318,7 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterLp(void)
     }
 
 #else
-    
+
     _Cy_USER_SysPm_Invoke_SRF(CY_USER_SYSPM_OP_ENTERLOWPOWER, &result);
 
 #endif /* defined(COMPONENT_SECURE_DEVICE)*/
@@ -328,6 +364,33 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterUlp(void)
 #else
 
     _Cy_USER_SysPm_Invoke_SRF(CY_USER_SYSPM_OP_ENTERULTRALOWPOWER, &result);
+
+#endif /* defined(COMPONENT_SECURE_DEVICE)*/
+
+    return result;
+}
+
+cy_en_user_syspm_status_t Cy_USER_SysEnterDS(void)
+{
+    cy_en_user_syspm_status_t result = CY_USER_SYSPM_FAIL;
+
+#if defined(COMPONENT_SECURE_DEVICE)
+
+    cy_en_syspm_status_t status;
+
+    ifx_se_disable(NULL);
+
+    status = Cy_SysPm_CpuEnterDeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
+    if (CY_SYSPM_SUCCESS == status)
+    {
+        ifx_se_enable(NULL);
+
+        result = CY_USER_SYSPM_SUCCESS;
+    }
+
+#else
+
+    _Cy_USER_SysPm_Invoke_SRF(CY_USER_SYSPM_OP_ENTERDEEPSLEEP, &result);
 
 #endif /* defined(COMPONENT_SECURE_DEVICE)*/
 

@@ -28,6 +28,7 @@
 
 #include "mtb_srf.h"
 #include "cycfg_ppc.h"
+#include "cy_syspm.h"
 
 #if !defined(COMPONENT_SECURE_DEVICE)
 /* Specifiy SYSPM SRF pool timeout value in microseconds. */
@@ -48,6 +49,7 @@ typedef enum
     CY_USER_SYSPM_OP_ENTERHIGHPERFORMANCE,  /**< Cy_USER_SysEnterHp */
     CY_USER_SYSPM_OP_ENTERLOWPOWER,         /**< Cy_USER_SysEnterLp */
     CY_USER_SYSPM_OP_ENTERULTRALOWPOWER,    /**< Cy_USER_SysEnterUlp */
+    CY_USER_SYSPM_OP_ENTERDEEPSLEEP,        /**< Cy_USER_SysEnterDS */
     CY_USER_SYSPM_OP_MAX
 } cy_user_syspm_srf_op_id_t;
 
@@ -98,3 +100,17 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterLp(void);
 *
 *******************************************************************************/
 cy_en_user_syspm_status_t Cy_USER_SysEnterUlp(void);
+
+/*******************************************************************************
+* Function Name: Cy_USER_SysEnterDS
+****************************************************************************//**
+*
+* Sets device into System Deep Sleep mode.
+*
+* \param none
+
+* \return
+* Status of the request.
+*
+*******************************************************************************/
+cy_en_user_syspm_status_t Cy_USER_SysEnterDS(void);

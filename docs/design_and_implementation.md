@@ -47,7 +47,7 @@ Power mode | API used | SRF Module (type) | VCCD  | CM33 clock | CM55 clock
 High performace (HP)  | `Cy_USER_SysEnterHp`          | USER SYSPM (custom)   | 0.9 V    | 200 MHz           | 400 MHz   
 Low power (LP)        | `Cy_USER_SysEnterLp`          | USER SYSPM (custom)   | 0.8 V    | 70 MHz            | 140 MHz   
 Ultra low power (ULP) | `Cy_USER_SysEnterUlp`         | USER SYSPM (custom)   | 0.7 V    | 50 MHz            | 50 MHz    
-Deep Sleep (DS)       | `Cy_SysPm_CpuEnterDeepSleep`  | PDL SYSPM (built-in) | 0.7 V    | Off               | Off      
+Deep Sleep (DS)       | `Cy_SysPm_CpuEnterDeepSleep`  | USER SYSPM (custom)   | 0.7 V    | Off               | Off      
 
 
 > **Note:** Reference clock variable (*SystemCoreClock*) is not updated to reflect the change in CM33 core clock frequency after switching the power modes. This is intentional in this code example, to demonstrate the effect of power mode transitions through change in User LED 1 blink frequency. It can be updated using `SystemCoreClockUpdate` API.
@@ -71,6 +71,7 @@ Operation                             | Invoked by API
 CY_USER_SYSPM_OP_ENTERHIGHPERFORMANCE | `Cy_USER_SysEnterHp`
 CY_USER_SYSPM_OP_ENTERLOWPOWER        | `Cy_USER_SysEnterLp`    
 CY_USER_SYSPM_OP_ENTERULTRALOWPOWER   | `Cy_USER_SysEnterUlp`
+CY_USER_SYSPM_OP_ENTERDEEPSLEEP       | `Cy_USER_SysEnterDS`
 
 
 The SRF USER module is implemented by the files available in the *user_srf* folder at the root of the project. Each file contains the code required for both secure and non-secure environments. See **Table 5** to understand the code orgainization.

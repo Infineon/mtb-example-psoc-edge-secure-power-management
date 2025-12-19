@@ -7,33 +7,33 @@
 * Related Document : See README.md
 *
 ********************************************************************************
-* (c) 2023-2025, Infineon Technologies AG, or an affiliate of Infineon
-* Technologies AG. All rights reserved.
-* This software, associated documentation and materials ("Software") is
-* owned by Infineon Technologies AG or one of its affiliates ("Infineon")
-* and is protected by and subject to worldwide patent protection, worldwide
-* copyright laws, and international treaty provisions. Therefore, you may use
-* this Software only as provided in the license agreement accompanying the
-* software package from which you obtained this Software. If no license
-* agreement applies, then any use, reproduction, modification, translation, or
-* compilation of this Software is prohibited without the express written
-* permission of Infineon.
-* 
-* Disclaimer: UNLESS OTHERWISE EXPRESSLY AGREED WITH INFINEON, THIS SOFTWARE
-* IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-* INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES OF NON-INFRINGEMENT OF
-* THIRD-PARTY RIGHTS AND IMPLIED WARRANTIES SUCH AS WARRANTIES OF FITNESS FOR A
-* SPECIFIC USE/PURPOSE OR MERCHANTABILITY.
-* Infineon reserves the right to make changes to the Software without notice.
-* You are responsible for properly designing, programming, and testing the
-* functionality and safety of your intended application of the Software, as
-* well as complying with any legal requirements related to its use. Infineon
-* does not guarantee that the Software will be free from intrusion, data theft
-* or loss, or other breaches ("Security Breaches"), and Infineon shall have
-* no liability arising out of any Security Breaches. Unless otherwise
-* explicitly approved by Infineon, the Software may not be used in any
-* application where a failure of the Product or any consequences of the use
-* thereof can reasonably be expected to result in personal injury.
+ * (c) 2023-2025, Infineon Technologies AG, or an affiliate of Infineon
+ * Technologies AG. All rights reserved.
+ * This software, associated documentation and materials ("Software") is
+ * owned by Infineon Technologies AG or one of its affiliates ("Infineon")
+ * and is protected by and subject to worldwide patent protection, worldwide
+ * copyright laws, and international treaty provisions. Therefore, you may use
+ * this Software only as provided in the license agreement accompanying the
+ * software package from which you obtained this Software. If no license
+ * agreement applies, then any use, reproduction, modification, translation, or
+ * compilation of this Software is prohibited without the express written
+ * permission of Infineon.
+ *
+ * Disclaimer: UNLESS OTHERWISE EXPRESSLY AGREED WITH INFINEON, THIS SOFTWARE
+ * IS PROVIDED AS-IS, WITH NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING, BUT NOT LIMITED TO, ALL WARRANTIES OF NON-INFRINGEMENT OF
+ * THIRD-PARTY RIGHTS AND IMPLIED WARRANTIES SUCH AS WARRANTIES OF FITNESS FOR A
+ * SPECIFIC USE/PURPOSE OR MERCHANTABILITY.
+ * Infineon reserves the right to make changes to the Software without notice.
+ * You are responsible for properly designing, programming, and testing the
+ * functionality and safety of your intended application of the Software, as
+ * well as complying with any legal requirements related to its use. Infineon
+ * does not guarantee that the Software will be free from intrusion, data theft
+ * or loss, or other breaches ("Security Breaches"), and Infineon shall have
+ * no liability arising out of any Security Breaches. Unless otherwise
+ * explicitly approved by Infineon, the Software may not be used in any
+ * application where a failure of the Product or any consequences of the use
+ * thereof can reasonably be expected to result in personal injury.
 *******************************************************************************/
 
 /*******************************************************************************
@@ -52,7 +52,7 @@
 
 /* LED toggle delay. This delay is applicable/true in POWER_MODE_HP only.
  * This is because, SystemCoreClock variable is not updated when the power mode
- * is changes. This is intentional to show that the core frequency is indeed 
+ * is changes. This is intentional to show that the core frequency is indeed
  * getting changed as a result of successful power mode switch. */
 #define BLINKY_LED_DELAY_MSEC (500U)
 
@@ -147,7 +147,7 @@ void gpio_isr_handler(void)
     if(1UL == Cy_GPIO_GetInterruptStatus(CYBSP_USER_BTN1_PORT, CYBSP_USER_BTN1_PIN))
     {
         user_btn_flag = true;
-       
+
         /* Clear the USER_BTN1 interrupt */
         Cy_GPIO_ClearInterrupt(CYBSP_USER_BTN1_PORT, CYBSP_USER_BTN1_PIN);
     }
@@ -169,13 +169,13 @@ void gpio_isr_handler(void)
 * Function Name: main
 ********************************************************************************
 * Summary:
-* This is the main function of the CM33 non-secure application. 
-* 
-* It initializes the device and board peripherals. It also initializes the 
-* retarget-io middleware to be used with the debug UART port using which 
+* This is the main function of the CM33 non-secure application.
+*
+* It initializes the device and board peripherals. It also initializes the
+* retarget-io middleware to be used with the debug UART port using which
 * messages are printed on the debug UART. The LED1 pin is initialized with
 * default configurations. The CM55 core is enabled and then the programs enters
-* an infinite while loop which toggles the LED1 and waits for BTN1 interrupt to 
+* an infinite while loop which toggles the LED1 and waits for BTN1 interrupt to
 * change the Power mode of the device.
 *
 * Parameters:
@@ -271,7 +271,7 @@ int main(void)
                     cur_pwr_mode = POWER_MODE_HP;
                 }
                 break;
-                
+
                 case POWER_MODE_LP:
                 {
                     printf(" Switching to Low Power mode\r\n");
@@ -305,7 +305,7 @@ int main(void)
 
                     Cy_GPIO_Clr(CYBSP_USER_LED1_PORT, CYBSP_USER_LED1_PIN);
 
-                    result = (cy_rslt_t)Cy_SysPm_CpuEnterDeepSleep(CY_SYSPM_WAIT_FOR_INTERRUPT);
+                    result = (cy_rslt_t)Cy_USER_SysEnterDS();
                     check_status(result);
 
                     /* Device will be back in ULP on successful entry and exit from Deep sleep mode */

@@ -2035,6 +2035,9 @@
                         <Param id="privileged1" value="false"/>
                         <Param id="privileged2" value="false"/>
                         <Param id="privileged3" value="false"/>
+                        <Param id="shareable1" value="false"/>
+                        <Param id="shareable2" value="false"/>
+                        <Param id="shareable3" value="false"/>
                         <Param id="size1" value="0x00003000"/>
                         <Param id="size2" value="0x00040000"/>
                         <Param id="size3" value="0x001C4000"/>
@@ -2367,7 +2370,12 @@
                         <Param id="is_receiver_3_used" value="true"/>
                         <Param id="is_receiver_4_used" value="false"/>
                         <Param id="is_receiver_5_used" value="false"/>
-                        <Param id="routeCtl" value="4"/>
+                        <Param id="routeCtl_0_1_int1" value="0"/>
+                        <Param id="routeCtl_0_1_int2" value="1"/>
+                        <Param id="routeCtl_2_3_int1" value="0"/>
+                        <Param id="routeCtl_2_3_int2" value="8"/>
+                        <Param id="routeCtl_4_5_int1" value="0"/>
+                        <Param id="routeCtl_4_5_int2" value="16"/>
                         <Param id="rxDmaTrigger" value="false"/>
                         <Param id="rxFifoTriggerLevel_0" value="10"/>
                         <Param id="rxFifoTriggerLevel_1" value="10"/>
@@ -2567,7 +2575,7 @@
                         <Param id="reg12" value="Rj_rAX1eb8U"/>
                         <Param id="reg120" value="Rj_rAX1eb8U"/>
                         <Param id="reg121" value="Rj_rAX1eb8U"/>
-                        <Param id="reg122" value="Rj_rAX1eb8U"/>
+                        <Param id="reg122" value="7cPl230VJyc"/>
                         <Param id="reg123" value="Rj_rAX1eb8U"/>
                         <Param id="reg124" value="Rj_rAX1eb8U"/>
                         <Param id="reg125" value="Rj_rAX1eb8U"/>
@@ -2584,7 +2592,7 @@
                         <Param id="reg135" value="Rj_rAX1eb8U"/>
                         <Param id="reg136" value="Rj_rAX1eb8U"/>
                         <Param id="reg137" value="Rj_rAX1eb8U"/>
-                        <Param id="reg138" value="Rj_rAX1eb8U"/>
+                        <Param id="reg138" value="7cPl230VJyc"/>
                         <Param id="reg139" value="Rj_rAX1eb8U"/>
                         <Param id="reg14" value="Rj_rAX1eb8U"/>
                         <Param id="reg140" value="Rj_rAX1eb8U"/>
@@ -2799,7 +2807,7 @@
                         <Param id="reg42" value="Rj_rAX1eb8U"/>
                         <Param id="reg43" value="Rj_rAX1eb8U"/>
                         <Param id="reg44" value="Rj_rAX1eb8U"/>
-                        <Param id="reg45" value="Rj_rAX1eb8U"/>
+                        <Param id="reg45" value="7cPl230VJyc"/>
                         <Param id="reg46" value="Rj_rAX1eb8U"/>
                         <Param id="reg47" value="Rj_rAX1eb8U"/>
                         <Param id="reg48" value="Rj_rAX1eb8U"/>
@@ -2851,7 +2859,7 @@
                         <Param id="reg9" value="Rj_rAX1eb8U"/>
                         <Param id="reg90" value="Rj_rAX1eb8U"/>
                         <Param id="reg91" value="Rj_rAX1eb8U"/>
-                        <Param id="reg92" value="Rj_rAX1eb8U"/>
+                        <Param id="reg92" value="7cPl230VJyc"/>
                         <Param id="reg93" value="Rj_rAX1eb8U"/>
                         <Param id="reg94" value="Rj_rAX1eb8U"/>
                         <Param id="reg95" value="Rj_rAX1eb8U"/>
@@ -3013,11 +3021,9 @@
                     <Block location="peri[0].mmio[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider2" value="2"/>
-                        <Param id="dividerEnabled0" value="false"/>
                         <Param id="dividerEnabled1" value="false"/>
                         <Param id="dividerEnabled2" value="true"/>
                         <Param id="dividerEnabled3" value="false"/>
-                        <Param id="dividerEnabled4" value="false"/>
                         <Param id="dividerEnabled5" value="false"/>
                     </Parameters>
                 </Personality>
@@ -3073,9 +3079,9 @@
                         <Param id="reg332" value="Rj_rAX1eb8U"/>
                         <Param id="reg333" value="Rj_rAX1eb8U"/>
                         <Param id="reg334" value="7cPl230VJyc"/>
-                        <Param id="reg335" value="Rj_rAX1eb8U"/>
+                        <Param id="reg335" value="7cPl230VJyc"/>
                         <Param id="reg336" value="Rj_rAX1eb8U"/>
-                        <Param id="reg337" value="Rj_rAX1eb8U"/>
+                        <Param id="reg337" value="7cPl230VJyc"/>
                         <Param id="reg338" value="Rj_rAX1eb8U"/>
                         <Param id="reg339" value="Rj_rAX1eb8U"/>
                         <Param id="reg340" value="Rj_rAX1eb8U"/>
@@ -3087,7 +3093,7 @@
                         <Param id="reg346" value="Rj_rAX1eb8U"/>
                         <Param id="reg347" value="Rj_rAX1eb8U"/>
                         <Param id="reg348" value="Rj_rAX1eb8U"/>
-                        <Param id="reg349" value="Rj_rAX1eb8U"/>
+                        <Param id="reg349" value="7cPl230VJyc"/>
                         <Param id="reg350" value="Rj_rAX1eb8U"/>
                         <Param id="reg351" value="Rj_rAX1eb8U"/>
                         <Param id="reg352" value="Rj_rAX1eb8U"/>
@@ -3275,11 +3281,8 @@
                     <Parameters>
                         <Param id="divider1" value="2"/>
                         <Param id="divider3" value="4"/>
-                        <Param id="dividerEnabled0" value="false"/>
                         <Param id="dividerEnabled1" value="true"/>
-                        <Param id="dividerEnabled2" value="false"/>
                         <Param id="dividerEnabled3" value="true"/>
-                        <Param id="dividerEnabled4" value="false"/>
                     </Parameters>
                 </Personality>
                 <Personality template="i2c" version="4.0" instance="Z-0WSjZHSXQ">
