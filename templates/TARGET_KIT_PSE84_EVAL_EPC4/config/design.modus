@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.60.0" toolsPackage="ModusToolbox 3.6.0" xmlns="http://cypress.com/xsd/cydesignfile_v6">
+<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.70.0" toolsPackage="ModusToolbox 3.7.0" xmlns="http://cypress.com/xsd/cydesignfile_v7">
     <Devices>
         <Device mpn="PSE846GPS4DBZC4A">
             <BlockConfig>
@@ -1280,7 +1280,7 @@
                         <Param id="extended_drive_sel" value="false"/>
                         <Param id="inFlash" value="true"/>
                         <Param id="initialState" value="1"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_RISING"/>
                         <Param id="nonSec" value="1"/>
                         <Param id="pullUpRes" value="CY_GPIO_PULLUP_RES_DISABLE"/>
                         <Param id="sioOutputBuffer" value="true"/>
@@ -2413,11 +2413,11 @@
                         <Param id="wordSize_7" value="CY_PDM_PCM_WSIZE_16_BIT"/>
                     </Parameters>
                 </Personality>
-                <Personality template="protection_ppc" version="1.0" instance="QSlKeBzRUz4">
+                <Personality template="protection_ppc" version="1.0" instance="pmrxKugIZ8k">
                     <Block location="peri[0]" locked="true"/>
                     <Parameters>
-                        <Param id="parent_0" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_1" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_0" value="7cPl230VJyc"/>
+                        <Param id="parent_1" value="7cPl230VJyc"/>
                         <Param id="parent_10" value="Rj_rAX1eb8U"/>
                         <Param id="parent_100" value="Rj_rAX1eb8U"/>
                         <Param id="parent_101" value="Rj_rAX1eb8U"/>
@@ -2460,7 +2460,7 @@
                         <Param id="parent_17" value="Rj_rAX1eb8U"/>
                         <Param id="parent_18" value="Rj_rAX1eb8U"/>
                         <Param id="parent_19" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_2" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_2" value="7cPl230VJyc"/>
                         <Param id="parent_20" value="Rj_rAX1eb8U"/>
                         <Param id="parent_21" value="Rj_rAX1eb8U"/>
                         <Param id="parent_22" value="Rj_rAX1eb8U"/>
@@ -2482,7 +2482,7 @@
                         <Param id="parent_37" value="Rj_rAX1eb8U"/>
                         <Param id="parent_38" value="Rj_rAX1eb8U"/>
                         <Param id="parent_39" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_4" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_4" value="7cPl230VJyc"/>
                         <Param id="parent_40" value="Rj_rAX1eb8U"/>
                         <Param id="parent_41" value="Rj_rAX1eb8U"/>
                         <Param id="parent_42" value="Rj_rAX1eb8U"/>
@@ -2490,11 +2490,11 @@
                         <Param id="parent_44" value="Rj_rAX1eb8U"/>
                         <Param id="parent_45" value="Rj_rAX1eb8U"/>
                         <Param id="parent_46" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_47" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_47" value="7cPl230VJyc"/>
                         <Param id="parent_48" value="Rj_rAX1eb8U"/>
                         <Param id="parent_49" value="Rj_rAX1eb8U"/>
                         <Param id="parent_5" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_50" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_50" value="7cPl230VJyc"/>
                         <Param id="parent_51" value="Rj_rAX1eb8U"/>
                         <Param id="parent_52" value="Rj_rAX1eb8U"/>
                         <Param id="parent_53" value="Rj_rAX1eb8U"/>
@@ -2507,7 +2507,7 @@
                         <Param id="parent_6" value="Rj_rAX1eb8U"/>
                         <Param id="parent_60" value="Rj_rAX1eb8U"/>
                         <Param id="parent_61" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_62" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_62" value="7cPl230VJyc"/>
                         <Param id="parent_63" value="Rj_rAX1eb8U"/>
                         <Param id="parent_64" value="Rj_rAX1eb8U"/>
                         <Param id="parent_65" value="Rj_rAX1eb8U"/>
@@ -2519,14 +2519,14 @@
                         <Param id="parent_70" value="Rj_rAX1eb8U"/>
                         <Param id="parent_71" value="Rj_rAX1eb8U"/>
                         <Param id="parent_72" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_73" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_74" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_73" value="7cPl230VJyc"/>
+                        <Param id="parent_74" value="7cPl230VJyc"/>
                         <Param id="parent_75" value="Rj_rAX1eb8U"/>
                         <Param id="parent_76" value="Rj_rAX1eb8U"/>
                         <Param id="parent_77" value="Rj_rAX1eb8U"/>
                         <Param id="parent_78" value="Rj_rAX1eb8U"/>
                         <Param id="parent_79" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_8" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_8" value="7cPl230VJyc"/>
                         <Param id="parent_80" value="Rj_rAX1eb8U"/>
                         <Param id="parent_81" value="Rj_rAX1eb8U"/>
                         <Param id="parent_82" value="Rj_rAX1eb8U"/>
@@ -2548,325 +2548,6 @@
                         <Param id="parent_97" value="Rj_rAX1eb8U"/>
                         <Param id="parent_98" value="Rj_rAX1eb8U"/>
                         <Param id="parent_99" value="Rj_rAX1eb8U"/>
-                        <Param id="reg0" value="Rj_rAX1eb8U"/>
-                        <Param id="reg1" value="Rj_rAX1eb8U"/>
-                        <Param id="reg10" value="Rj_rAX1eb8U"/>
-                        <Param id="reg100" value="Rj_rAX1eb8U"/>
-                        <Param id="reg101" value="Rj_rAX1eb8U"/>
-                        <Param id="reg102" value="Rj_rAX1eb8U"/>
-                        <Param id="reg103" value="Rj_rAX1eb8U"/>
-                        <Param id="reg104" value="Rj_rAX1eb8U"/>
-                        <Param id="reg105" value="Rj_rAX1eb8U"/>
-                        <Param id="reg106" value="Rj_rAX1eb8U"/>
-                        <Param id="reg107" value="Rj_rAX1eb8U"/>
-                        <Param id="reg108" value="Rj_rAX1eb8U"/>
-                        <Param id="reg109" value="Rj_rAX1eb8U"/>
-                        <Param id="reg11" value="Rj_rAX1eb8U"/>
-                        <Param id="reg110" value="Rj_rAX1eb8U"/>
-                        <Param id="reg111" value="Rj_rAX1eb8U"/>
-                        <Param id="reg112" value="Rj_rAX1eb8U"/>
-                        <Param id="reg113" value="Rj_rAX1eb8U"/>
-                        <Param id="reg114" value="Rj_rAX1eb8U"/>
-                        <Param id="reg115" value="Rj_rAX1eb8U"/>
-                        <Param id="reg116" value="Rj_rAX1eb8U"/>
-                        <Param id="reg117" value="Rj_rAX1eb8U"/>
-                        <Param id="reg118" value="Rj_rAX1eb8U"/>
-                        <Param id="reg119" value="Rj_rAX1eb8U"/>
-                        <Param id="reg12" value="Rj_rAX1eb8U"/>
-                        <Param id="reg120" value="Rj_rAX1eb8U"/>
-                        <Param id="reg121" value="Rj_rAX1eb8U"/>
-                        <Param id="reg122" value="7cPl230VJyc"/>
-                        <Param id="reg123" value="Rj_rAX1eb8U"/>
-                        <Param id="reg124" value="Rj_rAX1eb8U"/>
-                        <Param id="reg125" value="Rj_rAX1eb8U"/>
-                        <Param id="reg126" value="Rj_rAX1eb8U"/>
-                        <Param id="reg127" value="Rj_rAX1eb8U"/>
-                        <Param id="reg128" value="Rj_rAX1eb8U"/>
-                        <Param id="reg129" value="Rj_rAX1eb8U"/>
-                        <Param id="reg13" value="Rj_rAX1eb8U"/>
-                        <Param id="reg130" value="Rj_rAX1eb8U"/>
-                        <Param id="reg131" value="Rj_rAX1eb8U"/>
-                        <Param id="reg132" value="Rj_rAX1eb8U"/>
-                        <Param id="reg133" value="Rj_rAX1eb8U"/>
-                        <Param id="reg134" value="Rj_rAX1eb8U"/>
-                        <Param id="reg135" value="Rj_rAX1eb8U"/>
-                        <Param id="reg136" value="Rj_rAX1eb8U"/>
-                        <Param id="reg137" value="Rj_rAX1eb8U"/>
-                        <Param id="reg138" value="7cPl230VJyc"/>
-                        <Param id="reg139" value="Rj_rAX1eb8U"/>
-                        <Param id="reg14" value="Rj_rAX1eb8U"/>
-                        <Param id="reg140" value="Rj_rAX1eb8U"/>
-                        <Param id="reg141" value="Rj_rAX1eb8U"/>
-                        <Param id="reg142" value="Rj_rAX1eb8U"/>
-                        <Param id="reg143" value="Rj_rAX1eb8U"/>
-                        <Param id="reg144" value="Rj_rAX1eb8U"/>
-                        <Param id="reg145" value="Rj_rAX1eb8U"/>
-                        <Param id="reg146" value="Rj_rAX1eb8U"/>
-                        <Param id="reg147" value="Rj_rAX1eb8U"/>
-                        <Param id="reg148" value="7cPl230VJyc"/>
-                        <Param id="reg149" value="Rj_rAX1eb8U"/>
-                        <Param id="reg15" value="Rj_rAX1eb8U"/>
-                        <Param id="reg150" value="7cPl230VJyc"/>
-                        <Param id="reg151" value="Rj_rAX1eb8U"/>
-                        <Param id="reg152" value="7cPl230VJyc"/>
-                        <Param id="reg153" value="7cPl230VJyc"/>
-                        <Param id="reg154" value="7cPl230VJyc"/>
-                        <Param id="reg155" value="Rj_rAX1eb8U"/>
-                        <Param id="reg156" value="Rj_rAX1eb8U"/>
-                        <Param id="reg157" value="7cPl230VJyc"/>
-                        <Param id="reg158" value="Rj_rAX1eb8U"/>
-                        <Param id="reg159" value="Rj_rAX1eb8U"/>
-                        <Param id="reg16" value="7cPl230VJyc"/>
-                        <Param id="reg160" value="Rj_rAX1eb8U"/>
-                        <Param id="reg161" value="Rj_rAX1eb8U"/>
-                        <Param id="reg162" value="Rj_rAX1eb8U"/>
-                        <Param id="reg163" value="Rj_rAX1eb8U"/>
-                        <Param id="reg164" value="Rj_rAX1eb8U"/>
-                        <Param id="reg165" value="Rj_rAX1eb8U"/>
-                        <Param id="reg166" value="Rj_rAX1eb8U"/>
-                        <Param id="reg167" value="Rj_rAX1eb8U"/>
-                        <Param id="reg168" value="Rj_rAX1eb8U"/>
-                        <Param id="reg169" value="Rj_rAX1eb8U"/>
-                        <Param id="reg17" value="Rj_rAX1eb8U"/>
-                        <Param id="reg170" value="Rj_rAX1eb8U"/>
-                        <Param id="reg171" value="Rj_rAX1eb8U"/>
-                        <Param id="reg172" value="Rj_rAX1eb8U"/>
-                        <Param id="reg173" value="Rj_rAX1eb8U"/>
-                        <Param id="reg174" value="Rj_rAX1eb8U"/>
-                        <Param id="reg175" value="Rj_rAX1eb8U"/>
-                        <Param id="reg176" value="Rj_rAX1eb8U"/>
-                        <Param id="reg177" value="Rj_rAX1eb8U"/>
-                        <Param id="reg178" value="Rj_rAX1eb8U"/>
-                        <Param id="reg179" value="Rj_rAX1eb8U"/>
-                        <Param id="reg18" value="Rj_rAX1eb8U"/>
-                        <Param id="reg180" value="Rj_rAX1eb8U"/>
-                        <Param id="reg181" value="Rj_rAX1eb8U"/>
-                        <Param id="reg182" value="Rj_rAX1eb8U"/>
-                        <Param id="reg183" value="Rj_rAX1eb8U"/>
-                        <Param id="reg184" value="Rj_rAX1eb8U"/>
-                        <Param id="reg185" value="Rj_rAX1eb8U"/>
-                        <Param id="reg186" value="Rj_rAX1eb8U"/>
-                        <Param id="reg187" value="Rj_rAX1eb8U"/>
-                        <Param id="reg188" value="Rj_rAX1eb8U"/>
-                        <Param id="reg189" value="Rj_rAX1eb8U"/>
-                        <Param id="reg19" value="Rj_rAX1eb8U"/>
-                        <Param id="reg190" value="Rj_rAX1eb8U"/>
-                        <Param id="reg191" value="Rj_rAX1eb8U"/>
-                        <Param id="reg192" value="Rj_rAX1eb8U"/>
-                        <Param id="reg193" value="Rj_rAX1eb8U"/>
-                        <Param id="reg194" value="Rj_rAX1eb8U"/>
-                        <Param id="reg195" value="Rj_rAX1eb8U"/>
-                        <Param id="reg196" value="Rj_rAX1eb8U"/>
-                        <Param id="reg197" value="Rj_rAX1eb8U"/>
-                        <Param id="reg198" value="Rj_rAX1eb8U"/>
-                        <Param id="reg199" value="Rj_rAX1eb8U"/>
-                        <Param id="reg2" value="Rj_rAX1eb8U"/>
-                        <Param id="reg20" value="Rj_rAX1eb8U"/>
-                        <Param id="reg200" value="Rj_rAX1eb8U"/>
-                        <Param id="reg201" value="Rj_rAX1eb8U"/>
-                        <Param id="reg202" value="Rj_rAX1eb8U"/>
-                        <Param id="reg203" value="Rj_rAX1eb8U"/>
-                        <Param id="reg204" value="Rj_rAX1eb8U"/>
-                        <Param id="reg205" value="Rj_rAX1eb8U"/>
-                        <Param id="reg206" value="Rj_rAX1eb8U"/>
-                        <Param id="reg207" value="Rj_rAX1eb8U"/>
-                        <Param id="reg208" value="Rj_rAX1eb8U"/>
-                        <Param id="reg209" value="Rj_rAX1eb8U"/>
-                        <Param id="reg21" value="Rj_rAX1eb8U"/>
-                        <Param id="reg210" value="Rj_rAX1eb8U"/>
-                        <Param id="reg211" value="Rj_rAX1eb8U"/>
-                        <Param id="reg212" value="Rj_rAX1eb8U"/>
-                        <Param id="reg213" value="Rj_rAX1eb8U"/>
-                        <Param id="reg214" value="Rj_rAX1eb8U"/>
-                        <Param id="reg215" value="Rj_rAX1eb8U"/>
-                        <Param id="reg216" value="Rj_rAX1eb8U"/>
-                        <Param id="reg217" value="Rj_rAX1eb8U"/>
-                        <Param id="reg218" value="Rj_rAX1eb8U"/>
-                        <Param id="reg219" value="Rj_rAX1eb8U"/>
-                        <Param id="reg22" value="Rj_rAX1eb8U"/>
-                        <Param id="reg220" value="Rj_rAX1eb8U"/>
-                        <Param id="reg221" value="Rj_rAX1eb8U"/>
-                        <Param id="reg222" value="Rj_rAX1eb8U"/>
-                        <Param id="reg223" value="Rj_rAX1eb8U"/>
-                        <Param id="reg224" value="Rj_rAX1eb8U"/>
-                        <Param id="reg225" value="Rj_rAX1eb8U"/>
-                        <Param id="reg226" value="Rj_rAX1eb8U"/>
-                        <Param id="reg227" value="Rj_rAX1eb8U"/>
-                        <Param id="reg228" value="Rj_rAX1eb8U"/>
-                        <Param id="reg229" value="Rj_rAX1eb8U"/>
-                        <Param id="reg23" value="Rj_rAX1eb8U"/>
-                        <Param id="reg230" value="Rj_rAX1eb8U"/>
-                        <Param id="reg231" value="Rj_rAX1eb8U"/>
-                        <Param id="reg232" value="Rj_rAX1eb8U"/>
-                        <Param id="reg233" value="Rj_rAX1eb8U"/>
-                        <Param id="reg234" value="Rj_rAX1eb8U"/>
-                        <Param id="reg235" value="Rj_rAX1eb8U"/>
-                        <Param id="reg236" value="Rj_rAX1eb8U"/>
-                        <Param id="reg237" value="Rj_rAX1eb8U"/>
-                        <Param id="reg238" value="Rj_rAX1eb8U"/>
-                        <Param id="reg239" value="Rj_rAX1eb8U"/>
-                        <Param id="reg24" value="Rj_rAX1eb8U"/>
-                        <Param id="reg240" value="Rj_rAX1eb8U"/>
-                        <Param id="reg241" value="Rj_rAX1eb8U"/>
-                        <Param id="reg242" value="Rj_rAX1eb8U"/>
-                        <Param id="reg243" value="Rj_rAX1eb8U"/>
-                        <Param id="reg244" value="Rj_rAX1eb8U"/>
-                        <Param id="reg245" value="Rj_rAX1eb8U"/>
-                        <Param id="reg246" value="Rj_rAX1eb8U"/>
-                        <Param id="reg247" value="Rj_rAX1eb8U"/>
-                        <Param id="reg248" value="Rj_rAX1eb8U"/>
-                        <Param id="reg249" value="Rj_rAX1eb8U"/>
-                        <Param id="reg25" value="Rj_rAX1eb8U"/>
-                        <Param id="reg250" value="Rj_rAX1eb8U"/>
-                        <Param id="reg251" value="Rj_rAX1eb8U"/>
-                        <Param id="reg252" value="Rj_rAX1eb8U"/>
-                        <Param id="reg253" value="Rj_rAX1eb8U"/>
-                        <Param id="reg254" value="Rj_rAX1eb8U"/>
-                        <Param id="reg255" value="Rj_rAX1eb8U"/>
-                        <Param id="reg256" value="Rj_rAX1eb8U"/>
-                        <Param id="reg257" value="Rj_rAX1eb8U"/>
-                        <Param id="reg258" value="Rj_rAX1eb8U"/>
-                        <Param id="reg259" value="Rj_rAX1eb8U"/>
-                        <Param id="reg26" value="Rj_rAX1eb8U"/>
-                        <Param id="reg260" value="Rj_rAX1eb8U"/>
-                        <Param id="reg261" value="Rj_rAX1eb8U"/>
-                        <Param id="reg262" value="Rj_rAX1eb8U"/>
-                        <Param id="reg263" value="Rj_rAX1eb8U"/>
-                        <Param id="reg264" value="Rj_rAX1eb8U"/>
-                        <Param id="reg265" value="Rj_rAX1eb8U"/>
-                        <Param id="reg266" value="Rj_rAX1eb8U"/>
-                        <Param id="reg267" value="Rj_rAX1eb8U"/>
-                        <Param id="reg268" value="Rj_rAX1eb8U"/>
-                        <Param id="reg269" value="Rj_rAX1eb8U"/>
-                        <Param id="reg27" value="Rj_rAX1eb8U"/>
-                        <Param id="reg270" value="Rj_rAX1eb8U"/>
-                        <Param id="reg271" value="Rj_rAX1eb8U"/>
-                        <Param id="reg272" value="Rj_rAX1eb8U"/>
-                        <Param id="reg273" value="Rj_rAX1eb8U"/>
-                        <Param id="reg274" value="Rj_rAX1eb8U"/>
-                        <Param id="reg275" value="Rj_rAX1eb8U"/>
-                        <Param id="reg276" value="Rj_rAX1eb8U"/>
-                        <Param id="reg277" value="Rj_rAX1eb8U"/>
-                        <Param id="reg278" value="Rj_rAX1eb8U"/>
-                        <Param id="reg279" value="Rj_rAX1eb8U"/>
-                        <Param id="reg28" value="Rj_rAX1eb8U"/>
-                        <Param id="reg280" value="Rj_rAX1eb8U"/>
-                        <Param id="reg281" value="Rj_rAX1eb8U"/>
-                        <Param id="reg282" value="Rj_rAX1eb8U"/>
-                        <Param id="reg283" value="Rj_rAX1eb8U"/>
-                        <Param id="reg284" value="Rj_rAX1eb8U"/>
-                        <Param id="reg285" value="Rj_rAX1eb8U"/>
-                        <Param id="reg286" value="Rj_rAX1eb8U"/>
-                        <Param id="reg287" value="Rj_rAX1eb8U"/>
-                        <Param id="reg288" value="Rj_rAX1eb8U"/>
-                        <Param id="reg289" value="Rj_rAX1eb8U"/>
-                        <Param id="reg29" value="Rj_rAX1eb8U"/>
-                        <Param id="reg290" value="Rj_rAX1eb8U"/>
-                        <Param id="reg291" value="Rj_rAX1eb8U"/>
-                        <Param id="reg292" value="Rj_rAX1eb8U"/>
-                        <Param id="reg293" value="Rj_rAX1eb8U"/>
-                        <Param id="reg294" value="Rj_rAX1eb8U"/>
-                        <Param id="reg295" value="Rj_rAX1eb8U"/>
-                        <Param id="reg296" value="Rj_rAX1eb8U"/>
-                        <Param id="reg297" value="Rj_rAX1eb8U"/>
-                        <Param id="reg298" value="Rj_rAX1eb8U"/>
-                        <Param id="reg299" value="Rj_rAX1eb8U"/>
-                        <Param id="reg3" value="Rj_rAX1eb8U"/>
-                        <Param id="reg30" value="7cPl230VJyc"/>
-                        <Param id="reg300" value="Rj_rAX1eb8U"/>
-                        <Param id="reg301" value="Rj_rAX1eb8U"/>
-                        <Param id="reg302" value="Rj_rAX1eb8U"/>
-                        <Param id="reg303" value="Rj_rAX1eb8U"/>
-                        <Param id="reg304" value="Rj_rAX1eb8U"/>
-                        <Param id="reg305" value="Rj_rAX1eb8U"/>
-                        <Param id="reg306" value="Rj_rAX1eb8U"/>
-                        <Param id="reg307" value="Rj_rAX1eb8U"/>
-                        <Param id="reg308" value="Rj_rAX1eb8U"/>
-                        <Param id="reg309" value="Rj_rAX1eb8U"/>
-                        <Param id="reg31" value="Rj_rAX1eb8U"/>
-                        <Param id="reg310" value="Rj_rAX1eb8U"/>
-                        <Param id="reg311" value="Rj_rAX1eb8U"/>
-                        <Param id="reg312" value="Rj_rAX1eb8U"/>
-                        <Param id="reg313" value="Rj_rAX1eb8U"/>
-                        <Param id="reg314" value="Rj_rAX1eb8U"/>
-                        <Param id="reg315" value="Rj_rAX1eb8U"/>
-                        <Param id="reg316" value="Rj_rAX1eb8U"/>
-                        <Param id="reg317" value="Rj_rAX1eb8U"/>
-                        <Param id="reg318" value="Rj_rAX1eb8U"/>
-                        <Param id="reg32" value="Rj_rAX1eb8U"/>
-                        <Param id="reg33" value="7cPl230VJyc"/>
-                        <Param id="reg34" value="Rj_rAX1eb8U"/>
-                        <Param id="reg35" value="Rj_rAX1eb8U"/>
-                        <Param id="reg36" value="Rj_rAX1eb8U"/>
-                        <Param id="reg37" value="Rj_rAX1eb8U"/>
-                        <Param id="reg38" value="Rj_rAX1eb8U"/>
-                        <Param id="reg39" value="Rj_rAX1eb8U"/>
-                        <Param id="reg4" value="Rj_rAX1eb8U"/>
-                        <Param id="reg40" value="Rj_rAX1eb8U"/>
-                        <Param id="reg41" value="Rj_rAX1eb8U"/>
-                        <Param id="reg42" value="Rj_rAX1eb8U"/>
-                        <Param id="reg43" value="Rj_rAX1eb8U"/>
-                        <Param id="reg44" value="Rj_rAX1eb8U"/>
-                        <Param id="reg45" value="7cPl230VJyc"/>
-                        <Param id="reg46" value="Rj_rAX1eb8U"/>
-                        <Param id="reg47" value="Rj_rAX1eb8U"/>
-                        <Param id="reg48" value="Rj_rAX1eb8U"/>
-                        <Param id="reg49" value="Rj_rAX1eb8U"/>
-                        <Param id="reg5" value="Rj_rAX1eb8U"/>
-                        <Param id="reg50" value="Rj_rAX1eb8U"/>
-                        <Param id="reg51" value="Rj_rAX1eb8U"/>
-                        <Param id="reg52" value="Rj_rAX1eb8U"/>
-                        <Param id="reg53" value="Rj_rAX1eb8U"/>
-                        <Param id="reg54" value="Rj_rAX1eb8U"/>
-                        <Param id="reg55" value="Rj_rAX1eb8U"/>
-                        <Param id="reg56" value="Rj_rAX1eb8U"/>
-                        <Param id="reg57" value="Rj_rAX1eb8U"/>
-                        <Param id="reg58" value="Rj_rAX1eb8U"/>
-                        <Param id="reg59" value="Rj_rAX1eb8U"/>
-                        <Param id="reg6" value="Rj_rAX1eb8U"/>
-                        <Param id="reg60" value="Rj_rAX1eb8U"/>
-                        <Param id="reg61" value="Rj_rAX1eb8U"/>
-                        <Param id="reg62" value="Rj_rAX1eb8U"/>
-                        <Param id="reg63" value="Rj_rAX1eb8U"/>
-                        <Param id="reg64" value="Rj_rAX1eb8U"/>
-                        <Param id="reg65" value="Rj_rAX1eb8U"/>
-                        <Param id="reg66" value="Rj_rAX1eb8U"/>
-                        <Param id="reg67" value="Rj_rAX1eb8U"/>
-                        <Param id="reg68" value="Rj_rAX1eb8U"/>
-                        <Param id="reg69" value="Rj_rAX1eb8U"/>
-                        <Param id="reg7" value="Rj_rAX1eb8U"/>
-                        <Param id="reg70" value="Rj_rAX1eb8U"/>
-                        <Param id="reg71" value="Rj_rAX1eb8U"/>
-                        <Param id="reg72" value="Rj_rAX1eb8U"/>
-                        <Param id="reg73" value="Rj_rAX1eb8U"/>
-                        <Param id="reg74" value="Rj_rAX1eb8U"/>
-                        <Param id="reg75" value="Rj_rAX1eb8U"/>
-                        <Param id="reg76" value="Rj_rAX1eb8U"/>
-                        <Param id="reg77" value="Rj_rAX1eb8U"/>
-                        <Param id="reg78" value="Rj_rAX1eb8U"/>
-                        <Param id="reg79" value="Rj_rAX1eb8U"/>
-                        <Param id="reg8" value="Rj_rAX1eb8U"/>
-                        <Param id="reg80" value="Rj_rAX1eb8U"/>
-                        <Param id="reg81" value="Rj_rAX1eb8U"/>
-                        <Param id="reg82" value="Rj_rAX1eb8U"/>
-                        <Param id="reg83" value="Rj_rAX1eb8U"/>
-                        <Param id="reg84" value="Rj_rAX1eb8U"/>
-                        <Param id="reg85" value="Rj_rAX1eb8U"/>
-                        <Param id="reg86" value="Rj_rAX1eb8U"/>
-                        <Param id="reg87" value="Rj_rAX1eb8U"/>
-                        <Param id="reg88" value="Rj_rAX1eb8U"/>
-                        <Param id="reg89" value="Rj_rAX1eb8U"/>
-                        <Param id="reg9" value="Rj_rAX1eb8U"/>
-                        <Param id="reg90" value="Rj_rAX1eb8U"/>
-                        <Param id="reg91" value="Rj_rAX1eb8U"/>
-                        <Param id="reg92" value="7cPl230VJyc"/>
-                        <Param id="reg93" value="Rj_rAX1eb8U"/>
-                        <Param id="reg94" value="Rj_rAX1eb8U"/>
-                        <Param id="reg95" value="Rj_rAX1eb8U"/>
-                        <Param id="reg96" value="Rj_rAX1eb8U"/>
-                        <Param id="reg97" value="Rj_rAX1eb8U"/>
-                        <Param id="reg98" value="Rj_rAX1eb8U"/>
-                        <Param id="reg99" value="Rj_rAX1eb8U"/>
                         <Param id="response" value="CY_PPC_BUS_ERR"/>
                     </Parameters>
                 </Personality>
@@ -3027,11 +2708,11 @@
                         <Param id="dividerEnabled5" value="false"/>
                     </Parameters>
                 </Personality>
-                <Personality template="protection_ppc" version="1.0" instance="sbgkjP5GiLs">
+                <Personality template="protection_ppc" version="1.0" instance="LTJhSkAo89o">
                     <Block location="peri[1]" locked="true"/>
                     <Parameters>
-                        <Param id="parent_132" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_133" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_132" value="7cPl230VJyc"/>
+                        <Param id="parent_133" value="7cPl230VJyc"/>
                         <Param id="parent_134" value="Rj_rAX1eb8U"/>
                         <Param id="parent_135" value="Rj_rAX1eb8U"/>
                         <Param id="parent_136" value="Rj_rAX1eb8U"/>
@@ -3056,177 +2737,13 @@
                         <Param id="parent_155" value="Rj_rAX1eb8U"/>
                         <Param id="parent_156" value="Rj_rAX1eb8U"/>
                         <Param id="parent_157" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_158" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_158" value="7cPl230VJyc"/>
                         <Param id="parent_159" value="Rj_rAX1eb8U"/>
                         <Param id="parent_160" value="Rj_rAX1eb8U"/>
                         <Param id="parent_161" value="Rj_rAX1eb8U"/>
-                        <Param id="parent_162" value="Rj_rAX1eb8U"/>
+                        <Param id="parent_162" value="7cPl230VJyc"/>
                         <Param id="parent_163" value="Rj_rAX1eb8U"/>
                         <Param id="parent_164" value="Rj_rAX1eb8U"/>
-                        <Param id="reg319" value="Rj_rAX1eb8U"/>
-                        <Param id="reg320" value="Rj_rAX1eb8U"/>
-                        <Param id="reg321" value="Rj_rAX1eb8U"/>
-                        <Param id="reg322" value="Rj_rAX1eb8U"/>
-                        <Param id="reg323" value="Rj_rAX1eb8U"/>
-                        <Param id="reg324" value="Rj_rAX1eb8U"/>
-                        <Param id="reg325" value="Rj_rAX1eb8U"/>
-                        <Param id="reg326" value="Rj_rAX1eb8U"/>
-                        <Param id="reg327" value="Rj_rAX1eb8U"/>
-                        <Param id="reg328" value="Rj_rAX1eb8U"/>
-                        <Param id="reg329" value="Rj_rAX1eb8U"/>
-                        <Param id="reg330" value="Rj_rAX1eb8U"/>
-                        <Param id="reg331" value="Rj_rAX1eb8U"/>
-                        <Param id="reg332" value="Rj_rAX1eb8U"/>
-                        <Param id="reg333" value="Rj_rAX1eb8U"/>
-                        <Param id="reg334" value="7cPl230VJyc"/>
-                        <Param id="reg335" value="7cPl230VJyc"/>
-                        <Param id="reg336" value="Rj_rAX1eb8U"/>
-                        <Param id="reg337" value="7cPl230VJyc"/>
-                        <Param id="reg338" value="Rj_rAX1eb8U"/>
-                        <Param id="reg339" value="Rj_rAX1eb8U"/>
-                        <Param id="reg340" value="Rj_rAX1eb8U"/>
-                        <Param id="reg341" value="Rj_rAX1eb8U"/>
-                        <Param id="reg342" value="Rj_rAX1eb8U"/>
-                        <Param id="reg343" value="Rj_rAX1eb8U"/>
-                        <Param id="reg344" value="Rj_rAX1eb8U"/>
-                        <Param id="reg345" value="Rj_rAX1eb8U"/>
-                        <Param id="reg346" value="Rj_rAX1eb8U"/>
-                        <Param id="reg347" value="Rj_rAX1eb8U"/>
-                        <Param id="reg348" value="Rj_rAX1eb8U"/>
-                        <Param id="reg349" value="7cPl230VJyc"/>
-                        <Param id="reg350" value="Rj_rAX1eb8U"/>
-                        <Param id="reg351" value="Rj_rAX1eb8U"/>
-                        <Param id="reg352" value="Rj_rAX1eb8U"/>
-                        <Param id="reg353" value="Rj_rAX1eb8U"/>
-                        <Param id="reg354" value="Rj_rAX1eb8U"/>
-                        <Param id="reg355" value="Rj_rAX1eb8U"/>
-                        <Param id="reg356" value="Rj_rAX1eb8U"/>
-                        <Param id="reg357" value="Rj_rAX1eb8U"/>
-                        <Param id="reg358" value="Rj_rAX1eb8U"/>
-                        <Param id="reg359" value="Rj_rAX1eb8U"/>
-                        <Param id="reg360" value="Rj_rAX1eb8U"/>
-                        <Param id="reg361" value="Rj_rAX1eb8U"/>
-                        <Param id="reg362" value="Rj_rAX1eb8U"/>
-                        <Param id="reg363" value="Rj_rAX1eb8U"/>
-                        <Param id="reg364" value="Rj_rAX1eb8U"/>
-                        <Param id="reg365" value="Rj_rAX1eb8U"/>
-                        <Param id="reg366" value="Rj_rAX1eb8U"/>
-                        <Param id="reg367" value="Rj_rAX1eb8U"/>
-                        <Param id="reg368" value="Rj_rAX1eb8U"/>
-                        <Param id="reg369" value="Rj_rAX1eb8U"/>
-                        <Param id="reg370" value="Rj_rAX1eb8U"/>
-                        <Param id="reg371" value="Rj_rAX1eb8U"/>
-                        <Param id="reg372" value="Rj_rAX1eb8U"/>
-                        <Param id="reg373" value="Rj_rAX1eb8U"/>
-                        <Param id="reg374" value="Rj_rAX1eb8U"/>
-                        <Param id="reg375" value="Rj_rAX1eb8U"/>
-                        <Param id="reg376" value="Rj_rAX1eb8U"/>
-                        <Param id="reg377" value="Rj_rAX1eb8U"/>
-                        <Param id="reg378" value="Rj_rAX1eb8U"/>
-                        <Param id="reg379" value="Rj_rAX1eb8U"/>
-                        <Param id="reg380" value="Rj_rAX1eb8U"/>
-                        <Param id="reg381" value="Rj_rAX1eb8U"/>
-                        <Param id="reg382" value="Rj_rAX1eb8U"/>
-                        <Param id="reg383" value="Rj_rAX1eb8U"/>
-                        <Param id="reg384" value="Rj_rAX1eb8U"/>
-                        <Param id="reg385" value="Rj_rAX1eb8U"/>
-                        <Param id="reg386" value="Rj_rAX1eb8U"/>
-                        <Param id="reg387" value="Rj_rAX1eb8U"/>
-                        <Param id="reg388" value="Rj_rAX1eb8U"/>
-                        <Param id="reg389" value="Rj_rAX1eb8U"/>
-                        <Param id="reg390" value="Rj_rAX1eb8U"/>
-                        <Param id="reg391" value="Rj_rAX1eb8U"/>
-                        <Param id="reg392" value="Rj_rAX1eb8U"/>
-                        <Param id="reg393" value="Rj_rAX1eb8U"/>
-                        <Param id="reg394" value="Rj_rAX1eb8U"/>
-                        <Param id="reg395" value="Rj_rAX1eb8U"/>
-                        <Param id="reg396" value="Rj_rAX1eb8U"/>
-                        <Param id="reg397" value="Rj_rAX1eb8U"/>
-                        <Param id="reg398" value="Rj_rAX1eb8U"/>
-                        <Param id="reg399" value="Rj_rAX1eb8U"/>
-                        <Param id="reg400" value="Rj_rAX1eb8U"/>
-                        <Param id="reg401" value="Rj_rAX1eb8U"/>
-                        <Param id="reg402" value="Rj_rAX1eb8U"/>
-                        <Param id="reg403" value="Rj_rAX1eb8U"/>
-                        <Param id="reg404" value="Rj_rAX1eb8U"/>
-                        <Param id="reg405" value="Rj_rAX1eb8U"/>
-                        <Param id="reg406" value="Rj_rAX1eb8U"/>
-                        <Param id="reg407" value="Rj_rAX1eb8U"/>
-                        <Param id="reg408" value="Rj_rAX1eb8U"/>
-                        <Param id="reg409" value="Rj_rAX1eb8U"/>
-                        <Param id="reg410" value="Rj_rAX1eb8U"/>
-                        <Param id="reg411" value="Rj_rAX1eb8U"/>
-                        <Param id="reg412" value="Rj_rAX1eb8U"/>
-                        <Param id="reg413" value="Rj_rAX1eb8U"/>
-                        <Param id="reg414" value="Rj_rAX1eb8U"/>
-                        <Param id="reg415" value="Rj_rAX1eb8U"/>
-                        <Param id="reg416" value="Rj_rAX1eb8U"/>
-                        <Param id="reg417" value="Rj_rAX1eb8U"/>
-                        <Param id="reg418" value="Rj_rAX1eb8U"/>
-                        <Param id="reg419" value="Rj_rAX1eb8U"/>
-                        <Param id="reg420" value="Rj_rAX1eb8U"/>
-                        <Param id="reg421" value="Rj_rAX1eb8U"/>
-                        <Param id="reg422" value="Rj_rAX1eb8U"/>
-                        <Param id="reg423" value="Rj_rAX1eb8U"/>
-                        <Param id="reg424" value="Rj_rAX1eb8U"/>
-                        <Param id="reg425" value="Rj_rAX1eb8U"/>
-                        <Param id="reg426" value="Rj_rAX1eb8U"/>
-                        <Param id="reg427" value="Rj_rAX1eb8U"/>
-                        <Param id="reg428" value="Rj_rAX1eb8U"/>
-                        <Param id="reg429" value="Rj_rAX1eb8U"/>
-                        <Param id="reg430" value="Rj_rAX1eb8U"/>
-                        <Param id="reg431" value="Rj_rAX1eb8U"/>
-                        <Param id="reg432" value="Rj_rAX1eb8U"/>
-                        <Param id="reg433" value="Rj_rAX1eb8U"/>
-                        <Param id="reg434" value="Rj_rAX1eb8U"/>
-                        <Param id="reg435" value="Rj_rAX1eb8U"/>
-                        <Param id="reg436" value="Rj_rAX1eb8U"/>
-                        <Param id="reg437" value="Rj_rAX1eb8U"/>
-                        <Param id="reg438" value="Rj_rAX1eb8U"/>
-                        <Param id="reg439" value="Rj_rAX1eb8U"/>
-                        <Param id="reg440" value="Rj_rAX1eb8U"/>
-                        <Param id="reg441" value="Rj_rAX1eb8U"/>
-                        <Param id="reg442" value="Rj_rAX1eb8U"/>
-                        <Param id="reg443" value="Rj_rAX1eb8U"/>
-                        <Param id="reg444" value="Rj_rAX1eb8U"/>
-                        <Param id="reg445" value="Rj_rAX1eb8U"/>
-                        <Param id="reg446" value="Rj_rAX1eb8U"/>
-                        <Param id="reg447" value="Rj_rAX1eb8U"/>
-                        <Param id="reg448" value="Rj_rAX1eb8U"/>
-                        <Param id="reg449" value="Rj_rAX1eb8U"/>
-                        <Param id="reg450" value="Rj_rAX1eb8U"/>
-                        <Param id="reg451" value="Rj_rAX1eb8U"/>
-                        <Param id="reg452" value="Rj_rAX1eb8U"/>
-                        <Param id="reg453" value="Rj_rAX1eb8U"/>
-                        <Param id="reg454" value="Rj_rAX1eb8U"/>
-                        <Param id="reg455" value="Rj_rAX1eb8U"/>
-                        <Param id="reg456" value="Rj_rAX1eb8U"/>
-                        <Param id="reg457" value="Rj_rAX1eb8U"/>
-                        <Param id="reg458" value="Rj_rAX1eb8U"/>
-                        <Param id="reg459" value="Rj_rAX1eb8U"/>
-                        <Param id="reg460" value="Rj_rAX1eb8U"/>
-                        <Param id="reg461" value="Rj_rAX1eb8U"/>
-                        <Param id="reg462" value="Rj_rAX1eb8U"/>
-                        <Param id="reg463" value="Rj_rAX1eb8U"/>
-                        <Param id="reg464" value="Rj_rAX1eb8U"/>
-                        <Param id="reg465" value="Rj_rAX1eb8U"/>
-                        <Param id="reg466" value="Rj_rAX1eb8U"/>
-                        <Param id="reg467" value="Rj_rAX1eb8U"/>
-                        <Param id="reg468" value="Rj_rAX1eb8U"/>
-                        <Param id="reg469" value="Rj_rAX1eb8U"/>
-                        <Param id="reg470" value="Rj_rAX1eb8U"/>
-                        <Param id="reg471" value="Rj_rAX1eb8U"/>
-                        <Param id="reg472" value="7cPl230VJyc"/>
-                        <Param id="reg473" value="Rj_rAX1eb8U"/>
-                        <Param id="reg474" value="Rj_rAX1eb8U"/>
-                        <Param id="reg475" value="Rj_rAX1eb8U"/>
-                        <Param id="reg476" value="Rj_rAX1eb8U"/>
-                        <Param id="reg477" value="Rj_rAX1eb8U"/>
-                        <Param id="reg478" value="Rj_rAX1eb8U"/>
-                        <Param id="reg479" value="Rj_rAX1eb8U"/>
-                        <Param id="reg480" value="Rj_rAX1eb8U"/>
-                        <Param id="reg481" value="Rj_rAX1eb8U"/>
-                        <Param id="reg482" value="Rj_rAX1eb8U"/>
                         <Param id="response" value="CY_PPC_BUS_ERR"/>
                     </Parameters>
                 </Personality>
@@ -4462,9 +3979,10 @@
                 <Personality template="protection" version="1.0" instance="lyICW4XqF-w">
                     <Block location="vres[0].protection[0]" locked="true"/>
                     <Parameters>
+                        <Param id="enableSecureEnclave" value="true"/>
                         <Param id="pcSwitch" value="false"/>
                         <Param id="secureDebuggerAccess" value="true"/>
-                        <Param id="type" value="SECURE_CUSTOM"/>
+                        <Param id="type" value="SECURE_PERIPHERALS"/>
                         <Param id="validation_security_boundary" value="SECURE"/>
                     </Parameters>
                     <Personality template="domain0" instance="7cPl230VJyc">

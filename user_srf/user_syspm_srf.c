@@ -38,14 +38,8 @@
 *******************************************************************************/
 #if defined(COMPONENT_SECURE_DEVICE)
 
-#define DPLL_ENABLE_TIMEOUT_MS        (10000U)
-#define DPLL_INTPUT_FREQ_HZ           (24000000U)
-#define DPLL_FREQ_HP_HZ               (400000000U)
-#define DPLL_FREQ_LP_HZ               (140000000U)
-#define DPLL_FREQ_ULP_HZ              (50000000U)
-
 #define UART_HP_DIV                   (86U)
-#define UART_LP_DIV                   (30U)
+#define UART_LP_DIV                   (26U)
 #define UART_ULP_DIV                  (10U)
 
 
@@ -245,24 +239,10 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterHp(void)
 #if defined(COMPONENT_SECURE_DEVICE)
 
     cy_en_syspm_status_t status;
-    cy_stc_pll_config_t dpll =
-    {
-        .inputFreq = DPLL_INTPUT_FREQ_HZ,
-        .outputMode = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
-        .outputFreq = DPLL_FREQ_HP_HZ,
-    };
 
     status = Cy_SysPm_SystemEnterHp();
     if ((CY_SYSPM_SUCCESS == status) && Cy_SysPm_IsSystemHp())
     {
-        /** Set the RRAM to HP voltage mode */
-        Cy_RRAM_SetVoltageMode(RRAMC0, CY_RRAM_VMODE_HP);
-
-        /** Increase the PLL frequency to 400MHz*/
-        Cy_SysClk_PllDisable(SRSS_DPLL_LP_0_PATH_NUM);
-        Cy_SysClk_PllConfigure(SRSS_DPLL_LP_0_PATH_NUM, &dpll);
-        Cy_SysClk_PllEnable(SRSS_DPLL_LP_0_PATH_NUM, DPLL_ENABLE_TIMEOUT_MS);
-
         /** Set the high-frequency clock (CLKHF) divide */
         Cy_SysClk_ClkHfSetDivider(CY_CFG_SYSCLK_CLKHF0, CY_SYSCLK_CLKHF_DIVIDE_BY_2);
 
@@ -289,24 +269,10 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterLp(void)
 #if defined(COMPONENT_SECURE_DEVICE)
 
     cy_en_syspm_status_t status;
-    cy_stc_pll_config_t dpll =
-    {
-        .inputFreq = DPLL_INTPUT_FREQ_HZ,
-        .outputMode = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
-        .outputFreq = DPLL_FREQ_LP_HZ,
-    };
-
-    /** Deccrease the PLL frequency to 140MHz*/
-    Cy_SysClk_PllDisable(SRSS_DPLL_LP_0_PATH_NUM);
-    Cy_SysClk_PllConfigure(SRSS_DPLL_LP_0_PATH_NUM, &dpll);
-    Cy_SysClk_PllEnable(SRSS_DPLL_LP_0_PATH_NUM, DPLL_ENABLE_TIMEOUT_MS);
 
     status = Cy_SysPm_SystemEnterLp();
     if ((CY_SYSPM_SUCCESS == status) && Cy_SysPm_IsSystemLp())
     {
-        /** Set the RRAM to LP voltage mode for lower power consumption */
-        Cy_RRAM_SetVoltageMode(RRAMC0, CY_RRAM_VMODE_LP);
-
         /** Set the high-frequency clock (CLKHF) divide */
         Cy_SysClk_ClkHfSetDivider(CY_CFG_SYSCLK_CLKHF0, CY_SYSCLK_CLKHF_DIVIDE_BY_2);
 
@@ -333,23 +299,10 @@ cy_en_user_syspm_status_t Cy_USER_SysEnterUlp(void)
 #if defined(COMPONENT_SECURE_DEVICE)
 
     cy_en_syspm_status_t status;
-    cy_stc_pll_config_t dpll =
-    {
-        .inputFreq = DPLL_INTPUT_FREQ_HZ,
-        .outputMode = CY_SYSCLK_FLLPLL_OUTPUT_AUTO,
-        .outputFreq = DPLL_FREQ_ULP_HZ,
-    };
-
-    /** Decrease the PLL frequency to 50MHz*/
-    Cy_SysClk_PllDisable(SRSS_DPLL_LP_0_PATH_NUM);
-    Cy_SysClk_PllConfigure(SRSS_DPLL_LP_0_PATH_NUM, &dpll);
-    Cy_SysClk_PllEnable(SRSS_DPLL_LP_0_PATH_NUM, DPLL_ENABLE_TIMEOUT_MS);
 
     status = Cy_SysPm_SystemEnterUlp();
     if ((CY_SYSPM_SUCCESS == status) && Cy_SysPm_IsSystemUlp())
     {
-        /** Set the RRAM to ULP voltage mode for lower power consumption */
-        Cy_RRAM_SetVoltageMode(RRAMC0, CY_RRAM_VMODE_ULP);
 
         /** Set the high-frequency clock (CLKHF) to no divide */
         Cy_SysClk_ClkHfSetDivider(CY_CFG_SYSCLK_CLKHF0, CY_SYSCLK_CLKHF_NO_DIVIDE);
